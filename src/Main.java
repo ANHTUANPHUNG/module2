@@ -29,30 +29,30 @@ public class Main {
 //        } else if ( year%100==0 && year %400 ==0) {
 //            System.out.println("phải");
 //        }
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("nhập cân nặng");
-//        float weight = sc.nextFloat();
-//        System.out.println("nhập chiều cao");
-//        float height = sc.nextFloat();
-//        float bmi = weight/(height*height);
-//        if (bmi >= 30){
-//            System.out.println("obese");
-//        }else if (bmi >= 25){
-//            System.out.println("overweight");
-//        }else if (bmi >= 18.5){
-//            System.out.println("normal");
-//        }else if (bmi >= 0){
-//            System.out.println("underweight");
-//        }
         Scanner sc = new Scanner(System.in);
-        System.out.println("nhập tiền việt");
-        float VND = (sc).nextFloat();
-        float USDS = VND/23000;
-        System.out.println("số tiền đô là :" +USDS);
-        System.out.println("nhập USB");
-        float USD = sc.nextFloat();
-        float VNDS = USD*23000;
-        System.out.println("số tiền việt là :" +VNDS);
+        System.out.println("nhập cân nặng");
+        float weight = sc.nextFloat();
+        System.out.println("nhập chiều cao");
+        float height = sc.nextFloat();
+        float bmi = weight/(height*height);
+        if (bmi >= 30){
+            System.out.println("obese");
+        }else if (bmi >= 25){
+            System.out.println("overweight");
+        }else if (bmi >= 18.5){
+            System.out.println("normal");
+        }else if (bmi >= 0){
+            System.out.println("underweight");
+        }
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("nhập tiền việt");
+//        float VND = (sc).nextFloat();
+//        float USDS = VND/23000;
+//        System.out.println("số tiền đô là :" +USDS);
+//        System.out.println("nhập USB");
+//        float USD = sc.nextFloat();
+//        float VNDS = USD*23000;
+//        System.out.println("số tiền việt là :" +VNDS);
 
 
     }

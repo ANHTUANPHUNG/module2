@@ -48,43 +48,45 @@ public class Bai2 {
 //        System.out.println("nhập số b");
 //        int b = sc.nextInt();
 //        int total = 1;
-//        for (int i = 1; i <= a && i <= b; i++) {
+//        for (int i = 1;; i++) {
 //            if (a % i == 0 && b % i == 0) {
 //                    total=i;
 //                }
 //        }
-//        System.out.println(total);
-//        for (int i =0 ; i <3; i++) {
-//            for(int j=0; j<7;j++){
-//                System.out.print("*");
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("nhập số lượng số ngto cần tìm");
+//        int numbers = sc.nextInt();
+//        int N= 2;
+//        for (N = 2; N < numbers; N++ ){
+//            boolean isPrime = true;
+//            for (int i = 2 ; i<N; i++){
+//                if(N % i ==0){
+//                    isPrime = false;
+//                    break;
+//                }
 //            }
-//            System.out.println();
-//        }
-//        for (int i = 1; i <=5 ; i++){
-//            for (int j = 1 ; j <= i ; j++){
-//                System.out.print("*");
+//            if (isPrime){
+//                System.out.println(N);
 //            }
-//            System.out.println();
 //        }
         Scanner sc = new Scanner(System.in);
-        System.out.println("nhập số lượng số ngto cần tìm");
+        System.out.println("nhập số lượng số ngto can tìm");
         int numbers = sc.nextInt();
-        int N= 2;
-        int count = 0;
-        for (count = 0; count < numbers; ){
+        int N=2;
+
+        for (int count = 0; count <numbers;){
             boolean isPrime = true;
-            for (int i = 2 ; i< Math.sqrt(N); i++){
-                if(N % i ==0){
-                    isPrime = false;
+            for ( int i = 2 ; i <N; i++){
+                if (N%i ==0){
+                    isPrime =false;
                     break;
                 }
             }
             if (isPrime){
                 count++;
                 System.out.println(N);
-
-            }
-            N++;
+            }N++;
         }
 
     }
